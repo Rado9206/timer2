@@ -4,7 +4,6 @@
 	padding: 0;
 }
 
-
 body {
 	display: flex;
 	justify-content: center;
@@ -13,4 +12,27 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	color: #000;
 	background-color: rgb(226, 226, 226);
+}
+
+.counter-app {
+	position: relative;
+}
+
+.app-body {
+	display: flex;
+	flex-direction: column;
+	width: 800px;
+	height: 800px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+	overflow: hidden;
+}
+
+.image-section {
+	position: relative;
+	height: 400px;
+	background-image: url('/img/default.jpg');
+	background-size: cover;
+	background-position: center;
+	
 }

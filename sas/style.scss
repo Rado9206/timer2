@@ -23,7 +23,7 @@ body {
 	flex-direction: column;
 	width: 800px;
 	height: 800px;
-	border-radius: 5px;
+	border-radius: 15px;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 	overflow: hidden;
 }
@@ -34,5 +34,22 @@ body {
 	background-image: url('/img/default.jpg');
 	background-size: cover;
 	background-position: center;
-	
+}
+
+.settings-btn {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	padding: 20px 30px;
+	font-size: 32px;
+	background-color: #fff;
+	border: 1px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.settings-btn:hover {
+	color: white;
+	background-color: #333;
 }

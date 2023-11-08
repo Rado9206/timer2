@@ -14,10 +14,17 @@ const minutesCount = document.querySelector('.minutes-count')
 const secondsCount = document.querySelector('.seconds-count')
 
 const saveBtm = document.querySelector('.save')
-const eventspan = document.querySelector('.event')
+const eventSpan = document.querySelector('.event')
 let usersTime
 
+const appUpdate = () => {
+	eventSpan.textContent = eventName.value
+    usersTime = new Date(`${eventMonth.value} ${eventDay.value} ${eventYear.value}`)
+    imageSection.style.backgroundImage = `url(${eventImg.value})`
+}
+
 settingsBtm.addEventListener('click', () => {
-    settings.classList.toggle('active')
+	settings.classList.toggle('active')
 })
 
+saveBtm.addEventListener('click', appUpdate)

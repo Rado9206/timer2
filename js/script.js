@@ -18,6 +18,7 @@ const eventSpan = document.querySelector('.event')
 let usersTime
 
 const appUpdate = () => {
+    //aktualuzuje datę użytkownika, pozwala zmienić obrazek (tło)
 	eventSpan.textContent = eventName.value
     usersTime = new Date(`${eventMonth.value} ${eventDay.value} ${eventYear.value}`)
     imageSection.style.backgroundImage = `url(${eventImg.value})`
